@@ -6,7 +6,7 @@ Romanian translation for Mautic 4. The translation on Transifex has some known e
 1. Ensure the permissions are still correct for `www-data` user
     1. Run: `chown -R www-data:www-data "${MAUTIC_FOLDER}"`
     1. Run: `chmod -R 755 "${MAUTIC_FOLDER}"`
-1. Update cache with (run using `www-data` user): `/usr/bin/php ${MAUTIC_FOLDER}bin/console cache:clear --no-interaction`
+1. Update cache with (run using `www-data` user): `sudo -u www-data /usr/bin/php ${MAUTIC_FOLDER}bin/console cache:clear --no-interaction`
 1. If you cleared the cache using `root` user, then assign the permissions again.
 
 # Official translation
